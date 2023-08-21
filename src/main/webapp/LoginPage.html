@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<style>
+		body{
+			background-color: lightgray;
+		}
+		fieldset {
+			margin-top: 5%;
+			align-items: center;
+			margin-left: 35%;
+			width: 350px;
+			height: 300px;
+			border-radius: 5px;
+		}
+
+		h1 {
+			margin-top: 3%;
+			text-align: center;
+		}
+		input{
+			background-color: transparent;
+		}
+		button{
+			background-color: transparent;
+			height: 30px;
+			width: 100px;
+			margin-left: 2%;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Welcome here...</h1>
+
+	<form action="login" method="post">
+		<fieldset>
+			<legend>Login Here</legend>
+			<br>
+			<table height="200px" width="350px">
+				<tr>
+					<td><label for="emali">Email/Phone</label></td>
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<td><label for="pass">Password</label></td>
+					<td><input type="password" name="pass" id="pass"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><center><button>login</button>
+						<button>cancle</button></center>
+					</td>
+				</tr>
+			</table>
+			<a href="index.html">Forgot Passwords</a><br><br>
+			new ?<a href="SignupForm.html"> click here to create account.</a>
+		</fieldset>
+
+	</form>
+	
+</body>
+
+</html>
