@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<fieldset>
+		<legend>Enter Detail</legend>	
+		<form method="post" action="additem" enctype="multipart/form-data">
+		<table>
+			<tr>
+				<td><label for="itemname">Name:</label></td>
+				<td><input type="text" name="itemname" id="itemname"></td>
+			</tr>
+			<tr>
+				<td><label for="price">Price:</label></td>
+				<td><input type="number" name="price" id="price"></td>
+			</tr>
+			<tr>
+				<td><label for="type">Food Type:</label></td>
+			
+				<td><input type="radio" name="type" id="veg" value="veg">
+					<label for="type">veg</label>
+					<input type="radio" name="type" id="non-veg" value="non-veg">
+					<label for="type">non-veg</label></td>
+			</tr>
+			<tr>
+				<td><label for="quantity">Quantity:</label></td>
+				<td><input type="text" name="quantity" id="quantity"></td>
+			</tr>
+			<tr>
+				<td><label for="picture">Picture:</label></td>
+				<td><input type="file" name="picture" id="picture"></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<button type="reset">cancel</button>
+					<button>update</button>
+
+				</td>
+			</tr>
+		</table>
+
+	</form>
+	</fieldset><br>
+	<a href="AdminHomePage.html"><button>Back</button></a>
+
+</body>
+
+</html>

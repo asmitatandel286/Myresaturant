@@ -2,6 +2,8 @@ package Controller;
 
 import java.io.IOException;
 
+
+
 import dao.MyDao;
 import dto.Customer;
 import javax.servlet.ServletException;
@@ -22,7 +24,13 @@ public class CusLogin extends HttpServlet {
 
 		if (email.equals("admin@jsp.com") && pass.equals("admin")) {
 			resp.getWriter().print("<h1>Admin login success</h1>");
+			
+			// getting session and setting value
+			req.getSession().setAttribute("admin", "admin");
+			
 			req.getRequestDispatcher("AdminHomePage.html").include(req, resp);
+			
+		
 		} else {
 			Customer cust = d.fetchByEmail(email);
 			if (cust == null) {
